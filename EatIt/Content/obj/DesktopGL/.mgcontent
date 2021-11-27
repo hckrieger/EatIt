@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SourceFileCollection xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Profile>Reach</Profile>
+  <Platform>DesktopGL</Platform>
+  <Config />
+  <SourceFiles>
+    <File>C:/Users/hunte/source/repos/MonoGame/games/EatIt/EatIt/Content/Fonts/ScoreFont.spritefont</File>
+    <File>C:/Users/hunte/source/repos/MonoGame/games/EatIt/EatIt/Content/Fonts/TestFont.spritefont</File>
+    <File>C:/Users/hunte/source/repos/MonoGame/games/EatIt/EatIt/Content/Sprites/Card.png</File>
+    <File>C:/Users/hunte/source/repos/MonoGame/games/EatIt/EatIt/Content/Sprites/Eater.png</File>
+    <File>C:/Users/hunte/source/repos/MonoGame/games/EatIt/EatIt/Content/Sprites/Enemy.png</File>
+    <File>C:/Users/hunte/source/repos/MonoGame/games/EatIt/EatIt/Content/Sprites/FallingObjects@2x1.png</File>
+    <File>C:/Users/hunte/source/repos/MonoGame/games/EatIt/EatIt/Content/Sprites/GameOverWindow.png</File>
+  </SourceFiles>
+  <DestFiles>
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+  </DestFiles>
+</SourceFileCollection>
