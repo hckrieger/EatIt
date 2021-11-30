@@ -33,3 +33,5 @@ C:\Users\hunte\source\repos\MonoGame\games\EatIt\EatIt\obj\Debug\netcoreapp3.1\E
 C:\Users\hunte\source\repos\MonoGame\games\EatIt\EatIt\bin\Debug\netcoreapp3.1\Content\Test.xnb
 C:\Users\hunte\source\repos\MonoGame\games\EatIt\EatIt\bin\Debug\netcoreapp3.1\Content\Sprites\GameOverWindow.xnb
 C:\Users\hunte\source\repos\MonoGame\games\EatIt\EatIt\bin\Debug\netcoreapp3.1\Content\Fonts\ScoreFont.xnb
+C:\Users\hunte\source\repos\MonoGame\games\EatIt\EatIt\bin\Debug\netcoreapp3.1\Content\Sound\contact.xnb
+C:\Users\hunte\source\repos\MonoGame\games\EatIt\EatIt\bin\Debug\netcoreapp3.1\Content\Sound\score_hundred.xnb

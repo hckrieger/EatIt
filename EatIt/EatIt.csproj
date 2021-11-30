@@ -33,5 +33,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Content\Fonts\" />
+    <Folder Include="Content\Sound\" />
   </ItemGroup>
 </Project>

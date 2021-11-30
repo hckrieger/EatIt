@@ -27,6 +27,18 @@
 /processorParam:TextureFormat=Compressed
 /build:Fonts/TestFont.spritefont
 
+#begin Sound/contact.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:Sound/contact.wav
+
+#begin Sound/score_hundred.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:Sound/score_hundred.wav
+
 #begin Sprites/Card.png
 /importer:TextureImporter
 /processor:TextureProcessor

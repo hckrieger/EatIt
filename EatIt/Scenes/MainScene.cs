@@ -62,9 +62,10 @@ namespace EatIt.Scenes
             flickerText.LocalPosition = new Vector2(100, 100);
             gameObjects.AddChild(flickerText);
 
-            //gameOverWindow.SetOriginToCenter();
-            //gameOverWindow.LocalPosition = new Vector2(275, 225);
-            //gameObjects.AddChild(gameOverWindow);
+            gameOverWindow.SetOriginToCenter();
+            gameOverWindow.Visible = false;
+            gameOverWindow.LocalPosition = new Vector2(275, 225);
+            gameObjects.AddChild(gameOverWindow);
 
             for (int i = 0; i < objectQty; i++)
             {
@@ -103,7 +104,10 @@ namespace EatIt.Scenes
             {
                 if (obj.BoundingBox.Intersects(player.BoundingBox))
                 {
-
+                    ExtendedGame.AssetManager.PlaySoundEffect("Sound/contact");
+                    if (totalCatches % 100 == 0)
+                        ExtendedGame.AssetManager.PlaySoundEffect("Sound/score_hundred");
+                    
                     catchSet++;
                     totalCatches++;
                 }
@@ -127,7 +131,7 @@ namespace EatIt.Scenes
             //intervalText.Text = "drop interval: " + maxDouble.ToString();
             //levelText.Text = "level: " + level.ToString();
             ////maxCatchSetText.Text = "max catch set: " + maxCatchSet.ToString();
-            //directionTimerText.Text = "max switch time:" + enemy.maxSwitchTime.ToString();
+            //directionTimerText.Text = "max switch time:" + enemy.MaxSwitchTime.ToString();
             // speedText.Text = "speed: " + player.Speed.ToString();
             scoreFont.Text = "Score: " + totalCatches.ToString();
             if (catchSet >= maxCatchSet)
@@ -135,26 +139,32 @@ namespace EatIt.Scenes
                 level++;
 
 
-                if (level < 52)
+
+                if (level < 50)
                 {
                     
                     foreach (FallingObject obj in objectPool)
                     {
-                        obj.FallingSpeed += 5.25f;
+                        obj.FallingSpeed += 5.896f;
                     }
-                    player.Speed = Math.Abs(player.Speed) + 5.25f;
-                    enemy.Speed = Math.Abs(enemy.Speed) + 5.25f;
+                    player.Speed = Math.Abs(player.Speed) + 5.896f;
+                    enemy.Speed = Math.Abs(enemy.Speed) + 5.896f;
 
 
                     if (level % 10 == 0)
                         maxCatchSet++;
-                    maxDouble -= .00275d;
+                    maxDouble -= .003d;
 
-                    enemy.MaxSwitchTime -= .0275;
+                    enemy.MaxSwitchTime -= .03;
                 }
 
                 catchSet = 0;
                     
+            }
+
+            if (durationofFlickering <= 0)
+            {
+                gameOverWindow.Visible = true;
             }
         }
 
@@ -232,6 +242,7 @@ namespace EatIt.Scenes
             totalCatches = 0;
             maxCatchSet = 10;
             catchSet = 0;
+            gameOverWindow.Visible = false;
         }
     }
 }
