@@ -27,11 +27,47 @@
 /processorParam:TextureFormat=Compressed
 /build:Fonts/TestFont.spritefont
 
-#begin Sound/contact.wav
+#begin Sound/contact_0.wav
 /importer:WavImporter
 /processor:SoundEffectProcessor
 /processorParam:Quality=Best
-/build:Sound/contact.wav
+/build:Sound/contact_0.wav
+
+#begin Sound/contact_1.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:Sound/contact_1.wav
+
+#begin Sound/contact_2.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:Sound/contact_2.wav
+
+#begin Sound/contact_3.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:Sound/contact_3.wav
+
+#begin Sound/contact_4.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:Sound/contact_4.wav
+
+#begin Sound/contact_5.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:Sound/contact_5.wav
+
+#begin Sound/flicker_duration.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:Sound/flicker_duration.wav
 
 #begin Sound/score_hundred.wav
 /importer:WavImporter
@@ -86,6 +122,18 @@
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:Sprites/FallingObjects@2x1.png
+
+#begin Sprites/FallingObjects@6x1.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Sprites/FallingObjects@6x1.png
 
 #begin Sprites/GameOverWindow.png
 /importer:TextureImporter

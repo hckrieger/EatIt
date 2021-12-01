@@ -11,7 +11,7 @@ namespace EatIt.Scenes
     class MainScene : GameState
     {
         Player player = new Player();
-        double dropInterval = .35f;
+        double dropInterval;
         //float startDropInterval;
 
         List<FallingObject> objectPool;
@@ -21,6 +21,7 @@ namespace EatIt.Scenes
         int maxCatchSet;
         int totalCatches;
         int level;
+        bool startFlicker;
         double maxDouble;
         float flickerTimer = .15f;
         float durationofFlickering;
@@ -104,22 +105,23 @@ namespace EatIt.Scenes
             {
                 if (obj.BoundingBox.Intersects(player.BoundingBox))
                 {
-                    ExtendedGame.AssetManager.PlaySoundEffect("Sound/contact");
+                    ExtendedGame.AssetManager.PlaySoundEffect($"Sound/contact_{obj.Index}");
                     if (totalCatches % 100 == 0)
                         ExtendedGame.AssetManager.PlaySoundEffect("Sound/score_hundred");
                     
                     catchSet++;
                     totalCatches++;
+                    //obj.Deactivate();
                 }
 
-                if (obj.BoundingBox.Intersects(player.BoundingBox)/* || obj.LocalPosition.Y >= 560*/)
+                if (obj.BoundingBox.Intersects(player.BoundingBox)/* || obj.LocalPosition.Y >= 550*/)
                 {
                     obj.Deactivate();
-                    
                 }
 
                 if (obj.LocalPosition.Y >= 550)
                 {
+
                     GameOver(gameTime);
 
                 }
@@ -130,7 +132,7 @@ namespace EatIt.Scenes
             //flickerText.Text = "Flicker Timer: " + flickerTimer.ToString();
             //intervalText.Text = "drop interval: " + maxDouble.ToString();
             //levelText.Text = "level: " + level.ToString();
-            ////maxCatchSetText.Text = "max catch set: " + maxCatchSet.ToString();
+            //maxCatchSetText.Text = "max catch set: " + maxCatchSet.ToString();
             //directionTimerText.Text = "max switch time:" + enemy.MaxSwitchTime.ToString();
             // speedText.Text = "speed: " + player.Speed.ToString();
             scoreFont.Text = "Score: " + totalCatches.ToString();
@@ -140,22 +142,22 @@ namespace EatIt.Scenes
 
 
 
-                if (level < 50)
+                if (level < 35)
                 {
                     
                     foreach (FallingObject obj in objectPool)
                     {
-                        obj.FallingSpeed += 5.896f;
+                        obj.FallingSpeed += 9.25f;
                     }
-                    player.Speed = Math.Abs(player.Speed) + 5.896f;
-                    enemy.Speed = Math.Abs(enemy.Speed) + 5.896f;
+                    player.Speed = Math.Abs(player.Speed) + 9.5f;
+                    enemy.Speed = Math.Abs(enemy.Speed) + 9.5f;
 
 
-                    if (level % 10 == 0)
+                    if (level % 5 == 0)
                         maxCatchSet++;
-                    maxDouble -= .003d;
+                    maxDouble -= .005d;
 
-                    enemy.MaxSwitchTime -= .03;
+                    enemy.MaxSwitchTime -= .045;
                 }
 
                 catchSet = 0;
@@ -192,15 +194,20 @@ namespace EatIt.Scenes
 
         public void GameOver(GameTime gameTime)
         {
-
+            
 
             enemy.Speed = 0;
             player.Speed = 0;
 
+            if (startFlicker)
+            {
+                ExtendedGame.AssetManager.PlaySoundEffect("Sound/flicker_duration");
+                startFlicker = false;
+            }
+                
             foreach (FallingObject obj in objectPool)
             {
                 obj.Pause();
-                
             }
 
             durationofFlickering -= (float)gameTime.ElapsedGameTime.TotalSeconds;
@@ -236,6 +243,7 @@ namespace EatIt.Scenes
             foreach (FallingObject obj in objectPool)
                 obj.Reset();
 
+            startFlicker = true;
             durationofFlickering = 2.75f;
             maxDouble = .375d;
             level = 1;

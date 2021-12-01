@@ -33,5 +33,12 @@ C:\Users\hunte\source\repos\MonoGame\games\EatIt\EatIt\obj\Debug\netcoreapp3.1\E
 C:\Users\hunte\source\repos\MonoGame\games\EatIt\EatIt\bin\Debug\netcoreapp3.1\Content\Test.xnb
 C:\Users\hunte\source\repos\MonoGame\games\EatIt\EatIt\bin\Debug\netcoreapp3.1\Content\Sprites\GameOverWindow.xnb
 C:\Users\hunte\source\repos\MonoGame\games\EatIt\EatIt\bin\Debug\netcoreapp3.1\Content\Fonts\ScoreFont.xnb
-C:\Users\hunte\source\repos\MonoGame\games\EatIt\EatIt\bin\Debug\netcoreapp3.1\Content\Sound\contact.xnb
 C:\Users\hunte\source\repos\MonoGame\games\EatIt\EatIt\bin\Debug\netcoreapp3.1\Content\Sound\score_hundred.xnb
+C:\Users\hunte\source\repos\MonoGame\games\EatIt\EatIt\bin\Debug\netcoreapp3.1\Content\Sound\contact_0.xnb
+C:\Users\hunte\source\repos\MonoGame\games\EatIt\EatIt\bin\Debug\netcoreapp3.1\Content\Sound\contact_1.xnb
+C:\Users\hunte\source\repos\MonoGame\games\EatIt\EatIt\bin\Debug\netcoreapp3.1\Content\Sound\contact_2.xnb
+C:\Users\hunte\source\repos\MonoGame\games\EatIt\EatIt\bin\Debug\netcoreapp3.1\Content\Sound\contact_3.xnb
+C:\Users\hunte\source\repos\MonoGame\games\EatIt\EatIt\bin\Debug\netcoreapp3.1\Content\Sound\contact_4.xnb
+C:\Users\hunte\source\repos\MonoGame\games\EatIt\EatIt\bin\Debug\netcoreapp3.1\Content\Sound\contact_5.xnb
+C:\Users\hunte\source\repos\MonoGame\games\EatIt\EatIt\bin\Debug\netcoreapp3.1\Content\Sprites\FallingObjects@6x1.xnb
+C:\Users\hunte\source\repos\MonoGame\games\EatIt\EatIt\bin\Debug\netcoreapp3.1\Content\Sound\flicker_duration.xnb

@@ -11,8 +11,9 @@ namespace EatIt.GameObjects
     {
         Vector2 spawnPosition;
         public float FallingSpeed { get; set; }
+        public int Index { get; set; }
 
-        public FallingObject() : base("Sprites/FallingObjects@2x1", .4f)
+        public FallingObject() : base("Sprites/FallingObjects@6x1", .4f)
         {
             SetOriginToCenter();
             Reset();
@@ -42,7 +43,8 @@ namespace EatIt.GameObjects
         public void Activate()
         {
             Active = true;
-            SheetIndex = ExtendedGame.Random.Next(2);
+            Index = ExtendedGame.Random.Next(6);
+            SheetIndex = Index;
             if (MainScene != null)
                 LocalPosition = MainScene.Enemy.LocalPosition;
             
