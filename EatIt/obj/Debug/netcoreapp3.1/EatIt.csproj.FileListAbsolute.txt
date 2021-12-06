@@ -42,3 +42,5 @@ C:\Users\hunte\source\repos\MonoGame\games\EatIt\EatIt\bin\Debug\netcoreapp3.1\C
 C:\Users\hunte\source\repos\MonoGame\games\EatIt\EatIt\bin\Debug\netcoreapp3.1\Content\Sound\contact_5.xnb
 C:\Users\hunte\source\repos\MonoGame\games\EatIt\EatIt\bin\Debug\netcoreapp3.1\Content\Sprites\FallingObjects@6x1.xnb
 C:\Users\hunte\source\repos\MonoGame\games\EatIt\EatIt\bin\Debug\netcoreapp3.1\Content\Sound\flicker_duration.xnb
+C:\Users\hunte\source\repos\MonoGame\games\EatIt\EatIt\bin\Debug\netcoreapp3.1\Content\Fonts\DisplayHeader.xnb
+C:\Users\hunte\source\repos\MonoGame\games\EatIt\EatIt\bin\Debug\netcoreapp3.1\Content\Fonts\DisplayMessage.xnb

@@ -10,7 +10,7 @@ namespace EatIt.GameObjects
 {
     class Player : SpriteGameObject
     {
-        public float Speed { get; set; }
+        public float Speed { get; set; } = 0;
 
         public Player() : base("Sprites/Eater", .5f)
         {
@@ -25,6 +25,7 @@ namespace EatIt.GameObjects
         {
             base.HandleInput(inputHelper);
 
+            //Input controls for player movement
             if (inputHelper.KeyDown(Keys.Left) && LocalPosition.X >= 32)
                 velocity.X = -Speed;
             else if (inputHelper.KeyDown(Keys.Right) && LocalPosition.X <= 518)

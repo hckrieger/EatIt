@@ -4,6 +4,8 @@
   <Platform>DesktopGL</Platform>
   <Config />
   <SourceFiles>
+    <File>C:/Users/hunte/source/repos/MonoGame/games/EatIt/EatIt/Content/Fonts/DisplayHeader.spritefont</File>
+    <File>C:/Users/hunte/source/repos/MonoGame/games/EatIt/EatIt/Content/Fonts/DisplayMessage.spritefont</File>
     <File>C:/Users/hunte/source/repos/MonoGame/games/EatIt/EatIt/Content/Fonts/ScoreFont.spritefont</File>
     <File>C:/Users/hunte/source/repos/MonoGame/games/EatIt/EatIt/Content/Fonts/TestFont.spritefont</File>
     <File>C:/Users/hunte/source/repos/MonoGame/games/EatIt/EatIt/Content/Sound/contact_0.wav</File>
@@ -22,6 +24,8 @@
     <File>C:/Users/hunte/source/repos/MonoGame/games/EatIt/EatIt/Content/Sprites/GameOverWindow.png</File>
   </SourceFiles>
   <DestFiles>
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />

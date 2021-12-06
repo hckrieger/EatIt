@@ -13,6 +13,20 @@
 
 #---------------------------------- Content ---------------------------------#
 
+#begin Fonts/DisplayHeader.spritefont
+/importer:FontDescriptionImporter
+/processor:FontDescriptionProcessor
+/processorParam:PremultiplyAlpha=True
+/processorParam:TextureFormat=Compressed
+/build:Fonts/DisplayHeader.spritefont
+
+#begin Fonts/DisplayMessage.spritefont
+/importer:FontDescriptionImporter
+/processor:FontDescriptionProcessor
+/processorParam:PremultiplyAlpha=True
+/processorParam:TextureFormat=Compressed
+/build:Fonts/DisplayMessage.spritefont
+
 #begin Fonts/ScoreFont.spritefont
 /importer:FontDescriptionImporter
 /processor:FontDescriptionProcessor

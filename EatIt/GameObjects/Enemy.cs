@@ -46,7 +46,7 @@ namespace EatIt.GameObjects
             base.Reset();
 
             Speed = 250;
-            xPos = 200;
+            xPos = 275;
             yPos = 16;
             MaxSwitchTime = 3d;
         }

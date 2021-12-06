@@ -23,9 +23,7 @@ namespace EatIt
             base.LoadContent();
 
             GameStateManager.AddGameState(MAIN, new MainScene());
-
-            GameStateManager.AddGameState(TITLE, new TitleScreen());
-            GameStateManager.SwitchTo(TITLE);
+            GameStateManager.SwitchTo(MAIN);
 
             
         }

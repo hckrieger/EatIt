@@ -18,6 +18,8 @@ namespace EatIt.GameObjects
             SetOriginToCenter();
             Reset();
             spawnPosition = LocalPosition;
+
+            
         }
 
         public override void Update(GameTime gameTime)
